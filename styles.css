@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  background: #f9f9f9;
+}
+
+.task-tracker {
+  border: 2px solid #000;
+  border-radius: 12px;
+  padding: 20px;
+  width: 400px;
+  background: white;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 6px 0 0 6px;
+  border: 1px solid #ccc;
+}
+
+#addTaskBtn {
+  padding: 10px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li span {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+}
